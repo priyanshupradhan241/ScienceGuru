@@ -1,0 +1,58 @@
+/* Science Guru – brand: black, yellow, white. Mobile-first. */
+:root{--bk:#0b0b0c;--bk2:#17171a;--yl:#ffd400;--yl2:#ffb800;--wh:#fff;--bg:#faf8f1;--tx:#1c1c1f;--mu:#5b5b63;--r:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--tx);background:var(--wh);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+h1,h2,h3{line-height:1.15;margin:0 0 .6em;font-weight:800;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,7vw,3.8rem)}h2{font-size:clamp(1.7rem,4.5vw,2.5rem)}h3{font-size:1.15rem}
+.wrap{width:min(1140px,100% - 2rem);margin-inline:auto}.narrow{max-width:760px}
+:focus-visible{outline:3px solid var(--yl2);outline-offset:3px}
+.skip{position:absolute;left:-999px;background:var(--yl);color:#000;padding:.6rem 1rem;z-index:100}.skip:focus{left:8px;top:8px}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:var(--bk);color:#fff;border-bottom:2px solid var(--yl)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;letter-spacing:.04em}.brand img{border-radius:50%}.brand b{color:var(--yl)}
+.menu-btn{background:none;border:0;padding:12px;cursor:pointer;display:grid;gap:5px}.menu-btn span{width:24px;height:2px;background:#fff;display:block}
+.nav{position:absolute;top:100%;left:0;right:0;background:var(--bk);display:none;flex-direction:column;padding:1rem;gap:.2rem}.nav.open{display:flex}
+.nav a{padding:.8rem .5rem;text-decoration:none;font-weight:600}.nav a:hover{color:var(--yl)}
+/* buttons */
+.btn{display:inline-block;background:var(--yl);color:#000;font-weight:700;padding:.9rem 1.4rem;border-radius:999px;text-decoration:none;border:2px solid var(--yl);cursor:pointer;font-size:1rem;text-align:center;min-height:48px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,212,0,.35)}
+.btn-sm{padding:.55rem 1.1rem;min-height:40px}.btn-wa{background:#1fa855;border-color:#1fa855;color:#fff}.btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+/* hero */
+.hero{background:radial-gradient(circle at 80% 10%,#3a3000,transparent 50%),var(--bk);color:#fff;padding:3rem 0}
+.hero-in{display:grid;gap:2rem;align-items:center}
+.tag{display:inline-block;background:rgba(255,212,0,.15);color:var(--yl);padding:.4rem .9rem;border-radius:999px;font-weight:700;font-size:.95rem}
+.hero h1 span,.hero h1{color:#fff}.sub{font-size:1.15rem;color:#e8e8e8}.where{color:var(--yl)}
+.hero-img img{border-radius:var(--r);border:3px solid var(--yl);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+/* sections */
+.sec{padding:4rem 0}.alt{background:var(--bg)}.dark{background:var(--bk);color:#fff}.dark h2{color:var(--yl)}.sp{margin-top:2.5rem}
+.grid{display:grid;gap:1.2rem}
+.card{background:#fff;color:var(--tx);border-radius:var(--r);padding:1.4rem;box-shadow:0 6px 24px rgba(0,0,0,.08);border:1px solid #eee;transition:transform .25s}
+.card:hover{transform:translateY(-4px)}.dark .card{background:var(--bk2);color:#fff;border-color:#2a2a2e}
+.n{color:var(--yl);font-weight:800;font-size:1.6rem}.card p{margin:0;color:var(--mu)}.dark .card p{color:#cfcfd4}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}.chips li{background:var(--bk);color:var(--yl);padding:.6rem 1.2rem;border-radius:999px;font-weight:700}
+.tcard{padding:0;overflow:hidden}.tcard img{aspect-ratio:1;object-fit:cover;width:100%}
+.tcard h3,.tcard .role,.tcard ul{margin-inline:1.2rem}.tcard h3{margin-top:1rem;margin-bottom:.2rem}.tcard small{color:var(--mu);font-weight:600}
+.role{color:#8a6d00!important;font-weight:700;margin-bottom:.5rem!important}.tcard ul{padding-left:1.1rem;margin-bottom:1.2rem;color:var(--mu);font-size:.95rem}
+.steps{padding-left:1.2rem}.steps li{margin-bottom:.8rem}
+.quote{margin:0;background:#fff;border-left:6px solid var(--yl);padding:1.5rem;border-radius:var(--r);box-shadow:0 6px 24px rgba(0,0,0,.08)}
+blockquote{margin:0;font-size:1.15rem;font-style:italic}figcaption{margin-top:1rem;font-weight:700}
+/* gallery */
+.gh{margin-top:2rem}.gal{display:grid;gap:1rem;grid-template-columns:1fr}.gal img{border-radius:var(--r);width:100%;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+address{font-style:normal;margin-bottom:1rem}.muted{color:var(--mu);font-size:.9rem}.dark .muted,.ftr .muted{color:#b5b5bb}
+/* form */
+.form-wrap{align-items:start}.big{font-size:1.8rem;font-weight:800}.big a{color:var(--yl);text-decoration:none}
+form label{display:block;font-weight:600;font-size:.9rem;margin-bottom:.8rem}
+input,select,textarea{display:block;width:100%;margin-top:.3rem;padding:.75rem;border:1.5px solid #ccc;border-radius:10px;font:inherit;background:#fff;color:#000}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.ftr{background:#000;color:#ddd;padding:2.5rem 0 5rem;font-size:.95rem}.soc{display:flex;flex-wrap:wrap;gap:1rem}.soc a{color:var(--yl)}
+.fab{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:#1fa855;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.4);z-index:60}
+/* scroll reveal (JS adds .in; without JS everything stays visible) */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
+@media(min-width:700px){.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}
+ .gal{grid-template-columns:repeat(2,1fr)}.wide{grid-column:1/-1}.g-posters{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:960px){.menu-btn{display:none}.nav{display:flex;position:static;flex-direction:row;align-items:center;padding:0;gap:.2rem}
+ .hero-in{grid-template-columns:1.1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}.hero{padding:5rem 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
